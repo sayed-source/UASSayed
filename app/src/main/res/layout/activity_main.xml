@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg"
+    android:foregroundTint="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/angka"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/angka"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        android:text="Hasil :"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKali" />
+
+    <TextView
+        android:id="@+id/textviewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKali" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="89dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="92dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <Button
+        android:id="@+id/buttonTambah"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#808080"
+        android:text="tambah"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonKurang"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#808080"
+        android:text="kurang"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/buttonTambah"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/buttonKali"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#808080"
+        android:text="kali"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTambah" />
+
+    <Button
+        android:id="@+id/buttonBagi"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#808080"
+        android:text="bagi"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonKali"
+        app:layout_constraintTop_toBottomOf="@+id/buttonKurang" />
+</androidx.constraintlayout.widget.ConstraintLayout>
